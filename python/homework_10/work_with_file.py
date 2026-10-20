@@ -29,6 +29,8 @@ def work_with_file(operation, file_path, content=None):
         print(f'No permission to access: {file_path!r}')
     except UnicodeDecodeError:
         print(f'Not a text file: {file_path!r}')
+    except OSError as error:
+        print(f'Cannot access {file_path!r}: {error.strerror}')
     except TypeError:
         print('Wrong argument type: path and content must be strings.')
 
