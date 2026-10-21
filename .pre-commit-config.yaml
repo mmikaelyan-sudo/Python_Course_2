@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.0
+    hooks:
+      - id: ruff-check
+        files: ^python/homework_17/17_ruff/
+      - id: ruff-format
+        files: ^python/homework_17/17_ruff/
