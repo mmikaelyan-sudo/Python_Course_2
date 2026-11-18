@@ -1,0 +1,172 @@
+$ pip install pytest
+Collecting pytest
+  Using cached pytest-7.4.4-py3-none-any.whl (325 kB)
+Collecting pluggy<2.0,>=0.12
+  Using cached pluggy-1.2.0-py3-none-any.whl (17 kB)
+Collecting packaging
+  Using cached packaging-24.0-py3-none-any.whl (53 kB)
+Collecting tomli>=1.0.0; python_version < "3.11"
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Using cached importlib_metadata-6.7.0-py3-none-any.whl (22 kB)
+Collecting exceptiongroup>=1.0.0rc8; python_version < "3.11"
+  Using cached exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Collecting iniconfig
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Collecting typing-extensions>=3.6.4; python_version < "3.8"
+  Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Installing collected packages: zipp, typing-extensions, importlib-metadata, pluggy, packaging, tomli, exceptiongroup, iniconfig, pytest
+Successfully installed exceptiongroup-1.3.1 importlib-metadata-6.7.0 iniconfig-2.0.0 packaging-24.0 pluggy-1.2.0 pytest-7.4.4 tomli-2.0.1 typing-extensions-4.7.1 zipp-3.15.0
+WARNING: You are using pip version 20.1.1; however, version 24.0 is available.
+You should consider upgrading via the '/Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3 -m pip install --upgrade pip' command.
+
+$ pytest --version
+pytest 7.4.4
+
+===== Task 1
+$ pytest -v test_math.py
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 19 items
+
+test_math.py::test_add[2-3-5] PASSED                                     [  5%]
+test_math.py::test_add[-1--1--2] PASSED                                  [ 10%]
+test_math.py::test_add[0-0-0] PASSED                                     [ 15%]
+test_math.py::test_add[1.5-2.5-4.0] PASSED                               [ 21%]
+test_math.py::test_calculator_add[2-3-5] PASSED                          [ 26%]
+test_math.py::test_calculator_add[-2-5-3] PASSED                         [ 31%]
+test_math.py::test_calculator_subtract[5-3-2] PASSED                     [ 36%]
+test_math.py::test_calculator_subtract[3-5--2] PASSED                    [ 42%]
+test_math.py::test_calculator_subtract[0-0-0] PASSED                     [ 47%]
+test_math.py::test_calculator_multiply[4-3-12] PASSED                    [ 52%]
+test_math.py::test_calculator_multiply[4-0-0] PASSED                     [ 57%]
+test_math.py::test_calculator_multiply[-2-3--6] PASSED                   [ 63%]
+test_math.py::test_calculator_divide[10-2-5] PASSED                      [ 68%]
+test_math.py::test_calculator_divide[1-4-0.25] PASSED                    [ 73%]
+test_math.py::test_calculator_divide[-9-3--3] PASSED                     [ 78%]
+test_math.py::test_calculator_divide_by_zero PASSED                      [ 84%]
+test_math.py::test_multiplication[6-7-42] PASSED                         [ 89%]
+test_math.py::test_multiplication[-3-3--9] PASSED                        [ 94%]
+test_math.py::test_multiplication[5-0-0] PASSED                          [100%]
+
+============================== 19 passed in 0.02s ==============================
+
+===== Task 2
+$ pytest -v test_string_operations.py
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 6 items
+
+test_string_operations.py::test_palindrome_positive PASSED               [ 16%]
+test_string_operations.py::test_palindrome_edge_cases[] PASSED           [ 33%]
+test_string_operations.py::test_palindrome_edge_cases[a] PASSED          [ 50%]
+test_string_operations.py::test_palindrome_edge_cases[abba] PASSED       [ 66%]
+test_string_operations.py::test_palindrome_negative PASSED               [ 83%]
+test_string_operations.py::test_palindrome_case_sensitive PASSED         [100%]
+
+============================== 6 passed in 0.01s ===============================
+
+$ pytest -v test_string_operations.py -m palindrome
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 6 items
+
+test_string_operations.py::test_palindrome_positive PASSED               [ 16%]
+test_string_operations.py::test_palindrome_edge_cases[] PASSED           [ 33%]
+test_string_operations.py::test_palindrome_edge_cases[a] PASSED          [ 50%]
+test_string_operations.py::test_palindrome_edge_cases[abba] PASSED       [ 66%]
+test_string_operations.py::test_palindrome_negative PASSED               [ 83%]
+test_string_operations.py::test_palindrome_case_sensitive PASSED         [100%]
+
+============================== 6 passed in 0.01s ===============================
+
+===== Task 3
+$ pytest -v tests
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 25 items
+
+tests/test_math.py::test_add[2-3-5] PASSED                               [  4%]
+tests/test_math.py::test_add[-1--1--2] PASSED                            [  8%]
+tests/test_math.py::test_add[0-0-0] PASSED                               [ 12%]
+tests/test_math.py::test_add[1.5-2.5-4.0] PASSED                         [ 16%]
+tests/test_math.py::test_calculator_add[2-3-5] PASSED                    [ 20%]
+tests/test_math.py::test_calculator_add[-2-5-3] PASSED                   [ 24%]
+tests/test_math.py::test_calculator_subtract[5-3-2] PASSED               [ 28%]
+tests/test_math.py::test_calculator_subtract[3-5--2] PASSED              [ 32%]
+tests/test_math.py::test_calculator_subtract[0-0-0] PASSED               [ 36%]
+tests/test_math.py::test_calculator_multiply[4-3-12] PASSED              [ 40%]
+tests/test_math.py::test_calculator_multiply[4-0-0] PASSED               [ 44%]
+tests/test_math.py::test_calculator_multiply[-2-3--6] PASSED             [ 48%]
+tests/test_math.py::test_calculator_divide[10-2-5] PASSED                [ 52%]
+tests/test_math.py::test_calculator_divide[1-4-0.25] PASSED              [ 56%]
+tests/test_math.py::test_calculator_divide[-9-3--3] PASSED               [ 60%]
+tests/test_math.py::test_calculator_divide_by_zero PASSED                [ 64%]
+tests/test_math.py::test_multiplication[6-7-42] PASSED                   [ 68%]
+tests/test_math.py::test_multiplication[-3-3--9] PASSED                  [ 72%]
+tests/test_math.py::test_multiplication[5-0-0] PASSED                    [ 76%]
+tests/test_string_operations.py::test_palindrome_positive PASSED         [ 80%]
+tests/test_string_operations.py::test_palindrome_edge_cases[] PASSED     [ 84%]
+tests/test_string_operations.py::test_palindrome_edge_cases[a] PASSED    [ 88%]
+tests/test_string_operations.py::test_palindrome_edge_cases[abba] PASSED [ 92%]
+tests/test_string_operations.py::test_palindrome_negative PASSED         [ 96%]
+tests/test_string_operations.py::test_palindrome_case_sensitive PASSED   [100%]
+
+============================== 25 passed in 0.03s ==============================
+
+$ pytest -v tests/test_math.py -k multiplication
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 19 items / 16 deselected / 3 selected
+
+tests/test_math.py::test_multiplication[6-7-42] PASSED                   [ 33%]
+tests/test_math.py::test_multiplication[-3-3--9] PASSED                  [ 66%]
+tests/test_math.py::test_multiplication[5-0-0] PASSED                    [100%]
+
+======================= 3 passed, 16 deselected in 0.01s =======================
+
+===== Task 4
+$ pytest -v tests -m 'not P0'
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-7.4.4, pluggy-1.2.0 -- /Users/marharyta.mikaelyan/python_homework/hw20_pytest/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/python_homework/hw20_pytest
+configfile: pytest.ini
+collecting ... collected 25 items / 9 deselected / 16 selected
+
+tests/test_math.py::test_calculator_add[2-3-5] PASSED                    [  6%]
+tests/test_math.py::test_calculator_add[-2-5-3] PASSED                   [ 12%]
+tests/test_math.py::test_calculator_subtract[5-3-2] PASSED               [ 18%]
+tests/test_math.py::test_calculator_subtract[3-5--2] PASSED              [ 25%]
+tests/test_math.py::test_calculator_subtract[0-0-0] PASSED               [ 31%]
+tests/test_math.py::test_calculator_multiply[4-3-12] PASSED              [ 37%]
+tests/test_math.py::test_calculator_multiply[4-0-0] PASSED               [ 43%]
+tests/test_math.py::test_calculator_multiply[-2-3--6] PASSED             [ 50%]
+tests/test_math.py::test_calculator_divide[10-2-5] PASSED                [ 56%]
+tests/test_math.py::test_calculator_divide[1-4-0.25] PASSED              [ 62%]
+tests/test_math.py::test_calculator_divide[-9-3--3] PASSED               [ 68%]
+tests/test_math.py::test_calculator_divide_by_zero PASSED                [ 75%]
+tests/test_string_operations.py::test_palindrome_edge_cases[] PASSED     [ 81%]
+tests/test_string_operations.py::test_palindrome_edge_cases[a] PASSED    [ 87%]
+tests/test_string_operations.py::test_palindrome_edge_cases[abba] PASSED [ 93%]
+tests/test_string_operations.py::test_palindrome_case_sensitive PASSED   [100%]
+
+======================= 16 passed, 9 deselected in 0.02s =======================
+
