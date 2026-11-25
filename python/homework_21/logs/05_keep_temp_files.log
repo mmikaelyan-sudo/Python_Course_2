@@ -1,0 +1,6 @@
+$ pytest -k "not flaky" -q
+11 passed, 1 skipped, 1 deselected, 1 xfailed in 0.03s
+Temporary hw21_* files left: 0
+$ pytest -k "not flaky" -q --keep-temp-files
+11 passed, 1 skipped, 1 deselected, 1 xfailed in 0.02s
+Temporary hw21_* files left: 19

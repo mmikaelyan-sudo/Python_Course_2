@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- /Users/marharyta.mikaelyan/Documents/Python_Course_2/python/homework_21/venv/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/marharyta.mikaelyan/Documents/Python_Course_2/python/homework_21
+configfile: pytest.ini
+testpaths: tests
+plugins: rerunfailures-16.7
+collecting ... collected 14 items
+
+tests/test_basic_fixture.py::test_config_has_expected_sections PASSED    [  7%]
+tests/test_basic_fixture.py::test_config_values_are_valid PASSED         [ 14%]
+tests/test_data_processing.py::test_convert_to_upper PASSED              [ 21%]
+tests/test_data_processing.py::test_input_file_unchanged PASSED          [ 28%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[lower] PASSED [ 35%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed] PASSED [ 42%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[upper] PASSED [ 50%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[digits] PASSED [ 57%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline] PASSED [ 64%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[empty] PASSED [ 71%]
+tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic] SKIPPED [ 78%]
+tests/test_data_processing.py::test_convert_keeps_text_length XFAIL      [ 85%]
+tests/test_data_processing.py::test_same_file_raises_error PASSED        [ 92%]
+tests/test_data_processing.py::test_flaky_conversion RERUN               [100%]
+tests/test_data_processing.py::test_flaky_conversion PASSED              [100%]
+
+=========================== rerun test summary info ============================
+RERUN tests/test_data_processing.py::test_flaky_conversion
+PASSED tests/test_data_processing.py::test_flaky_conversion
+=========================== short test summary info ============================
+XFAIL tests/test_data_processing.py::test_convert_keeps_text_length - Known issue: str.upper() turns 'ß' into 'SS', so the length of the text changes
+SKIPPED [1] tests/test_data_processing.py:56: Cyrillic support is not in scope yet
+============== 12 passed, 1 skipped, 1 xfailed, 1 rerun in 0.02s ===============
