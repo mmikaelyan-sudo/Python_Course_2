@@ -1,0 +1,254 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- /Users/marharyta.mikaelyan/Documents/Python_Course_2/python/homework_22/venv/bin/python3.12
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.14', 'Platform': 'macOS-14.7.3-arm64-arm-64bit', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'metadata': '3.1.1', 'html': '4.2.0'}}
+rootdir: /Users/marharyta.mikaelyan/Documents/Python_Course_2/python/homework_22
+configfile: pytest.ini
+testpaths: tests
+plugins: metadata-3.1.1, html-4.2.0
+collecting ... collected 13 items
+
+tests/test_basic_fixture.py::test_config_has_expected_sections 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_basic_fixture.py::test_config_has_expected_sections
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_basic_fixture.py::test_config_has_expected_sections
+PASSED                                                                   [  7%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_basic_fixture.py::test_config_has_expected_sections
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_basic_fixture.py::test_config_values_are_valid 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_basic_fixture.py::test_config_values_are_valid
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_basic_fixture.py::test_config_values_are_valid
+PASSED                                                                   [ 15%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_basic_fixture.py::test_config_values_are_valid
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_lb4_ci1d.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_nh19r3av.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper
+18:36:10 INFO     data_processing: Converted 39 characters to upper case
+PASSED                                                                   [ 23%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_nh19r3av.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_lb4_ci1d.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_input_file_unchanged 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_input_file_unchanged
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_dzj2_yd8.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_xlfwyfm1.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_input_file_unchanged
+18:36:10 INFO     data_processing: Converted 39 characters to upper case
+PASSED                                                                   [ 30%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_input_file_unchanged
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_xlfwyfm1.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_dzj2_yd8.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[lower] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_bjx_fmfg.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_vtwqu_43.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+18:36:10 INFO     data_processing: Converted 5 characters to upper case
+PASSED                                                                   [ 38%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_vtwqu_43.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_bjx_fmfg.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hxbclqw7.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_s_0s2f02.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+18:36:10 INFO     data_processing: Converted 10 characters to upper case
+PASSED                                                                   [ 46%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_s_0s2f02.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hxbclqw7.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[upper] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_57dbe6z7.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_9pby7i6e.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+18:36:10 INFO     data_processing: Converted 13 characters to upper case
+PASSED                                                                   [ 53%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_9pby7i6e.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_57dbe6z7.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[digits] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_577v_19_.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hch1fnbl.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+18:36:10 INFO     data_processing: Converted 12 characters to upper case
+PASSED                                                                   [ 61%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hch1fnbl.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_577v_19_.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_8jt1rp3p.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_ya7u_lge.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+18:36:10 INFO     data_processing: Converted 17 characters to upper case
+PASSED                                                                   [ 69%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_ya7u_lge.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_8jt1rp3p.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[empty] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_e2oaceoo.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_kj_bxugr.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+18:36:10 INFO     data_processing: Converted 0 characters to upper case
+PASSED                                                                   [ 76%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_kj_bxugr.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_e2oaceoo.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic] 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+SKIPPED (Cyrillic support is not in scope yet)                           [ 84%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: SKIPPED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_convert_keeps_text_length 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_keeps_text_length
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_yy1xeurv.txt
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_b7fc9csq.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_keeps_text_length
+18:36:10 INFO     data_processing: Converted 6 characters to upper case
+XFAIL (Known issue: str.upper() turns 'ß' into 'SS', so the length o...) [ 92%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: XFAIL
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_keeps_text_length
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_b7fc9csq.txt
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_yy1xeurv.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+tests/test_data_processing.py::test_same_file_raises_error 
+-------------------------------- live log setup --------------------------------
+18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_same_file_raises_error
+18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_0n22hz59.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: setup result: PASSED
+-------------------------------- live log call ---------------------------------
+18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_same_file_raises_error
+PASSED                                                                   [100%]------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: call result: PASSED
+
+------------------------------ live log teardown -------------------------------
+18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_same_file_raises_error
+18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_0n22hz59.txt
+------------------------------ live log logreport ------------------------------
+18:36:10 INFO     conftest: teardown result: PASSED
+
+
+- Generated html report: file:///Users/marharyta.mikaelyan/Documents/Python_Course_2/python/homework_22/artefacts/report.html -
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_data_processing.py:55: Cyrillic support is not in scope yet
+XFAIL tests/test_data_processing.py::test_convert_keeps_text_length - Known issue: str.upper() turns 'ß' into 'SS', so the length of the text changes
+=================== 11 passed, 1 skipped, 1 xfailed in 0.03s ===================

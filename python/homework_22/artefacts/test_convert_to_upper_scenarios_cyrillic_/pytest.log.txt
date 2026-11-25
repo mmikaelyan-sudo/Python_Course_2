@@ -1,0 +1,4 @@
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+2026-11-25 18:36:10 INFO     conftest: setup result: SKIPPED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED

@@ -1,0 +1,123 @@
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_basic_fixture.py::test_config_values_are_valid
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_basic_fixture.py::test_config_values_are_valid
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_basic_fixture.py::test_config_values_are_valid
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_lb4_ci1d.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_nh19r3av.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper
+2026-11-25 18:36:10 INFO     data_processing: Converted 39 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_nh19r3av.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_lb4_ci1d.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_input_file_unchanged
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_dzj2_yd8.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_xlfwyfm1.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_input_file_unchanged
+2026-11-25 18:36:10 INFO     data_processing: Converted 39 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_input_file_unchanged
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_xlfwyfm1.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_dzj2_yd8.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_bjx_fmfg.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_vtwqu_43.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+2026-11-25 18:36:10 INFO     data_processing: Converted 5 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[lower]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_vtwqu_43.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_bjx_fmfg.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hxbclqw7.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_s_0s2f02.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+2026-11-25 18:36:10 INFO     data_processing: Converted 10 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[mixed]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_s_0s2f02.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hxbclqw7.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_57dbe6z7.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_9pby7i6e.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+2026-11-25 18:36:10 INFO     data_processing: Converted 13 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[upper]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_9pby7i6e.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_57dbe6z7.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_577v_19_.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hch1fnbl.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+2026-11-25 18:36:10 INFO     data_processing: Converted 12 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[digits]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_hch1fnbl.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_577v_19_.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_8jt1rp3p.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_ya7u_lge.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+2026-11-25 18:36:10 INFO     data_processing: Converted 17 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[multiline]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_ya7u_lge.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_8jt1rp3p.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_e2oaceoo.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_kj_bxugr.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+2026-11-25 18:36:10 INFO     data_processing: Converted 0 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[empty]
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_kj_bxugr.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_e2oaceoo.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+2026-11-25 18:36:10 INFO     conftest: setup result: SKIPPED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_to_upper_scenarios[cyrillic]
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_convert_keeps_text_length
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_yy1xeurv.txt
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_b7fc9csq.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_convert_keeps_text_length
+2026-11-25 18:36:10 INFO     data_processing: Converted 6 characters to upper case
+2026-11-25 18:36:10 INFO     conftest: call result: XFAIL
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_convert_keeps_text_length
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_b7fc9csq.txt
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_yy1xeurv.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_data_processing.py::test_same_file_raises_error
+2026-11-25 18:36:10 INFO     conftest: Created temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_0n22hz59.txt
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_data_processing.py::test_same_file_raises_error
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_data_processing.py::test_same_file_raises_error
+2026-11-25 18:36:10 INFO     conftest: Deleted temporary file /var/folders/gy/t7t5n5nd0pq783kjggbhsrkr0000gn/T/hw22_0n22hz59.txt
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED

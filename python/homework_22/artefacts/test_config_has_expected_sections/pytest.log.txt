@@ -1,0 +1,6 @@
+2026-11-25 18:36:10 INFO     conftest: ===SETUP=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: setup result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===CALL=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: call result: PASSED
+2026-11-25 18:36:10 INFO     conftest: ===TEARDOWN=== tests/test_basic_fixture.py::test_config_has_expected_sections
+2026-11-25 18:36:10 INFO     conftest: teardown result: PASSED
